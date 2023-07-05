@@ -1,0 +1,63 @@
+05-Jul-23 11:33:21 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 11:33:24 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=%3Cadd+consumer+key%3E&oauth_timestamp=1688571201&oauth_nonce=dc8485315932fe8542e92b86c53a4efb692d7413&oauth_signature_method=HMAC-SHA256&oauth_signature=jkhJ06xV2%2Bar7d2BjttGDMDTHjNJevGlPIOQ%2FvQyrVY%3D HTTP/1.1" 401 112
+05-Jul-23 11:55:26 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 11:55:28 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=MYSITE2_API_KEY&oauth_timestamp=1688572526&oauth_nonce=c7a4711e4e2f25241ef2642edc60822a72055e46&oauth_signature_method=HMAC-SHA256&oauth_signature=t34Jd4pikM8IsCkN2liIM0cPNQIjTeByUUkdAFdv4FY%3D HTTP/1.1" 401 112
+05-Jul-23 12:01:04 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 12:01:05 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=None&oauth_timestamp=1688572864&oauth_nonce=b90f13562359ddd10484ea2374c38fb5c50d3c2b&oauth_signature_method=HMAC-SHA256&oauth_signature=pmCSeCS%2BTRPCGUni2zJ5tVLNQhNH%2FOuGCC6AH9N02uU%3D HTTP/1.1" 401 112
+05-Jul-23 12:01:39 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 12:01:40 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=None&oauth_timestamp=1688572899&oauth_nonce=ca56fe79811d2c5ad9d8f4869401438db91cbc30&oauth_signature_method=HMAC-SHA256&oauth_signature=Bju25Bhu5DLIGaDZvIvvD97FzeVpyea2Cgz%2B2lOVpaE%3D HTTP/1.1" 401 112
+05-Jul-23 12:02:03 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 12:02:03 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=None&oauth_timestamp=1688572923&oauth_nonce=0688388e8e682e1025d308c45f7cac90093fc48f&oauth_signature_method=HMAC-SHA256&oauth_signature=od0Rv0LpSYCTB3lBpEBKaaFmXV3nerxbQmUzuPLNrv8%3D HTTP/1.1" 401 112
+05-Jul-23 12:59:40 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 12:59:44 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688576380&oauth_nonce=bd9265ec2b9615e31021ad59e6b20b6dcf49e8ec&oauth_signature_method=HMAC-SHA256&oauth_signature=5ibP4osv9Ko4HHEPwlNkno2WPW4KWfqMvZRIzlF9S1g%3D HTTP/1.1" 201 408
+05-Jul-23 12:59:44 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 12:59:47 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688576384&oauth_nonce=f29c66338d4cc335a23eb067176695591e7243dc&oauth_signature_method=HMAC-SHA256&oauth_signature=7lGe0gD4OdxL4Nf6yjRZB7Us9ueumLXpuHM80lkcdMs%3D HTTP/1.1" 201 408
+05-Jul-23 12:59:47 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 12:59:50 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688576387&oauth_nonce=c6cf7df1f813a251d35702657767f0dabac09a73&oauth_signature_method=HMAC-SHA256&oauth_signature=QgivxlMfLySe4Z3MAtz64K7FhDo5ubuTPsPFbuO37Us%3D HTTP/1.1" 201 409
+05-Jul-23 12:59:50 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 12:59:52 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688576390&oauth_nonce=24cf4d7a1260c5cd587cd6a553eaf1149f53c9fd&oauth_signature_method=HMAC-SHA256&oauth_signature=us8yKM58pQnZApBlOIXlNWhpcgsz9YN4MUb5J4e3ing%3D HTTP/1.1" 201 406
+05-Jul-23 12:59:52 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 12:59:55 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688576392&oauth_nonce=bb768dbd537fcea4ac5558e3e5b167928dd53b4a&oauth_signature_method=HMAC-SHA256&oauth_signature=D3pjm79%2BCsBH5l42g5TphHHnDQj%2BTu33STrNsCmjHvs%3D HTTP/1.1" 201 408
+05-Jul-23 13:02:47 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:02:50 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688576567&oauth_nonce=bb48136e60a09cce4c40cac723ef1d7ff695f2c3&oauth_signature_method=HMAC-SHA256&oauth_signature=3vI3oQZ8Ayk5sGIi3PNd2dw7XL4JFgthVXUIxRX3wYI%3D HTTP/1.1" 201 407
+05-Jul-23 13:02:50 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:02:53 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688576570&oauth_nonce=b220e246c30f3086612ce5716202216de2cdd1c1&oauth_signature_method=HMAC-SHA256&oauth_signature=fcQ5dTUFx02x%2BrUSdZs88vnjEOF5G%2FL04UVm15bkRSc%3D HTTP/1.1" 201 406
+05-Jul-23 13:02:53 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:02:56 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688576573&oauth_nonce=523a2732c431f1d03c828fde81e9bbaa42c3c2b9&oauth_signature_method=HMAC-SHA256&oauth_signature=Qxo4946D1ruYr0iWWAXroCtsl75EaDEM32IX8AzTaOU%3D HTTP/1.1" 201 408
+05-Jul-23 13:02:56 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:02:58 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688576576&oauth_nonce=c016a9232e99594b7acaa42628cad9a0232dd832&oauth_signature_method=HMAC-SHA256&oauth_signature=3WE1N2rYDf%2Fudj1ZlRSwCW%2Ficii9r5v%2FNr0It2bXGrg%3D HTTP/1.1" 201 405
+05-Jul-23 13:02:58 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:03:01 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688576578&oauth_nonce=cb940be49c499f773fa17310e494d95ea4574016&oauth_signature_method=HMAC-SHA256&oauth_signature=JUM53TXR%2Fn2AmtvtMp3YaFJm3J8WECNsXRy5zS9W19Y%3D HTTP/1.1" 201 409
+05-Jul-23 13:15:47 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:15:51 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688577347&oauth_nonce=0d9d0ad14850dc994c6cd984e27680213bddb3a2&oauth_signature_method=HMAC-SHA256&oauth_signature=0R1f5HlljcmL8dgDGHWtE6ne35D6Qv5qggjl2W%2BJZoE%3D HTTP/1.1" 201 409
+05-Jul-23 13:15:51 - ('222c7788-3abf-4934-8a52-f20754c9ee9b@supersqa.com', '1 users added to website')
+05-Jul-23 13:15:51 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:15:53 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688577351&oauth_nonce=47f401d8bd7db847de0751c2045f7be46ee6ba56&oauth_signature_method=HMAC-SHA256&oauth_signature=wW2pg8GbAbK5DsABCQgUv7j15QKU6RrQYbJGpISQSME%3D HTTP/1.1" 201 407
+05-Jul-23 13:15:53 - ('7b1e5fe3-fc9d-42f6-a7d9-41bdbe8d49be@supersqa.com', '2 users added to website')
+05-Jul-23 13:15:53 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:15:56 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688577353&oauth_nonce=2b5e78581ec7fd4a60335b9f61d4f2cd91d5d6aa&oauth_signature_method=HMAC-SHA256&oauth_signature=00D9kteB1UyZC6HTgF6s8QEzquRvTe1648KGVtGu7uc%3D HTTP/1.1" 201 408
+05-Jul-23 13:15:56 - ('d6b3b957-7326-422f-adac-5ee805b7a5c6@supersqa.com', '3 users added to website')
+05-Jul-23 13:17:16 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:17:19 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688577436&oauth_nonce=30f81a178fd31f60c6218f1e4119a44bd369de5d&oauth_signature_method=HMAC-SHA256&oauth_signature=5nZj5Gy%2BFvm%2Bp24IfwosR8fWviajeT1sGriwPF8EA1E%3D HTTP/1.1" 201 404
+05-Jul-23 13:17:19 - ('1 users added to website', "User's email is: a39b4bba-c3d7-48a0-9c07-d33cb4a61c66@supersqa.com")
+05-Jul-23 13:17:19 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:17:23 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688577439&oauth_nonce=7ccbdfc1002c4d1c3c9a9ebfb055899b6ccd3ce3&oauth_signature_method=HMAC-SHA256&oauth_signature=UFUBz0VDtW9QYM1sRrB6W%2FgDbK%2FVc3Z2PHeUKg9baw8%3D HTTP/1.1" 201 406
+05-Jul-23 13:17:23 - ('2 users added to website', "User's email is: 115a130e-3110-4b3e-8d7d-7efda98a7a4e@supersqa.com")
+05-Jul-23 13:17:23 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 13:17:25 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688577443&oauth_nonce=9fe78348313db2128064820b8299d07ec65fb174&oauth_signature_method=HMAC-SHA256&oauth_signature=r7%2FvnB3aPDUeq6WUuIM8eegIvNOy%2Bp9s0cHvtt7biSg%3D HTTP/1.1" 201 407
+05-Jul-23 13:17:25 - ('3 users added to website', "User's email is: 2dc0d5bc-962b-4102-82cf-6a3c7722f333@supersqa.com")
+05-Jul-23 14:31:40 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 14:31:44 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688581900&oauth_nonce=fbf9ae14e5a04f06c9485ebe93578a539dff871a&oauth_signature_method=HMAC-SHA256&oauth_signature=UiWO8%2BFSv0W0gL9ZBJsfuh7bQ24hP5C%2FqK2yjKtJhgE%3D HTTP/1.1" 201 407
+05-Jul-23 14:31:44 - ('1 users added to website', "User's email is: 8dd430df-25ff-48d5-a0ad-b35de1e4ddcd@supersqa.com")
+05-Jul-23 14:31:44 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 14:31:47 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688581904&oauth_nonce=9f082c4326f23b03423cbd7eb224cd847579ec70&oauth_signature_method=HMAC-SHA256&oauth_signature=welDs2h%2BPd8gIRkPvz0h%2Bngsn1tKRXey9KrvLU056Tw%3D HTTP/1.1" 201 408
+05-Jul-23 14:31:47 - ('2 users added to website', "User's email is: f1ce633f-0f39-4919-b91d-a52be1a9d4fb@supersqa.com")
+05-Jul-23 14:31:47 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 14:31:50 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688581907&oauth_nonce=ddd7030ffa6be519f0e9422399d63c464b92b749&oauth_signature_method=HMAC-SHA256&oauth_signature=RdjL2uhCn4dStKpXm6kyP4EflzRfQbss27LrozpdiRE%3D HTTP/1.1" 201 409
+05-Jul-23 14:31:50 - ('3 users added to website', "User's email is: 942f7b95-5366-4f02-b014-c032c632ab6b@supersqa.com")
+05-Jul-23 14:31:50 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 14:31:53 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688581910&oauth_nonce=c68e7aa1078fb0da35db734bccb57eaadd1fecee&oauth_signature_method=HMAC-SHA256&oauth_signature=6y76M1ObR3JwRNMz%2BKB%2BIFf%2BsUGjqnFI3zbrJLfX6m8%3D HTTP/1.1" 201 406
+05-Jul-23 14:31:53 - ('4 users added to website', "User's email is: 8d408a4a-d512-4c12-ab3d-667b1a519113@supersqa.com")
+05-Jul-23 14:31:53 - Starting new HTTP connection (1): localhost:8888
+05-Jul-23 14:31:55 - http://localhost:8888 "POST /mysite2/wp-json/wc/v3/customers?oauth_consumer_key=ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79&oauth_timestamp=1688581913&oauth_nonce=09c891407374e58bfd96bddcb974c794d7450986&oauth_signature_method=HMAC-SHA256&oauth_signature=Oy1kbVAaI9%2B5nGQbYiZ3E7YpKrT8V32XMtr74PCG2Og%3D HTTP/1.1" 201 407
+05-Jul-23 14:31:55 - ('5 users added to website', "User's email is: 284410d1-9d6d-486e-af06-47ffe9c9a2b0@supersqa.com")
