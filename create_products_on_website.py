@@ -15,7 +15,7 @@ args = parser.parse_args()
 num_of_products = args.number_of_products
 
 # one way to do command line argument. add number of users right after file.py in cmd then enter.
-#also change to - for i in range(number_of_products):
+#also change to: for i in range(number_of_products):
 # import sys
 # arguments = sys.argv
 # number_of_products = int(arguments[1])
@@ -46,5 +46,5 @@ for i in range(int(num_of_products)):
     rs_json = rs_api.json()
     name = rs_json['name']
     price = rs_json['price']
-    print(name)
-    print(price)
+    print(f"{i + 1} of {num_of_products} products created: ", name, price)
+
