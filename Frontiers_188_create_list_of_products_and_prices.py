@@ -28,8 +28,11 @@ while True:
     products = r.json()
 
     status_code = r.status_code
+    response_body = r.content
     if status_code != 200:
-        raise Exception(f"Expected status code 200. Got {status_code}")
+        raise Exception(f"Expected status code 200. Got {status_code}. \n"
+                        f"More information about your error: {response_body}")
+
 
     page = page + 1
     if not products:  # no more products
@@ -57,8 +60,8 @@ with open (output_file, 'w', newline= '') as csv_f:
 #
 # wcapi = API(
 #     url = "http://localhost:8888/mysite2",
-#     consumer_key="ck_1226001dd4150bfea8f8d4a958c7e32944dc4e79",
-#     consumer_secret="cs_6d10fc8c29e675a1e84b08434cae145083f30370",
+#     consumer_key="<add api key>",
+#     consumer_secret="<add api secret>",
 #     version="wc/v3",
 #     timeout=60
 # )
