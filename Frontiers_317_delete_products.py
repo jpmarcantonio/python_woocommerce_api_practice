@@ -8,8 +8,8 @@ from woocommerce import API
 
 logging.basicConfig(level=logging.INFO)
 
-env_variable_key = 'MYSITE2_API_KEY'
-env_variable_secret = 'MYSITE2_API_SECRET'
+woo_key = 'WOO_KEY'
+woo_secret = 'WOO_SECRET'
 
 def check_env_variables(variable_name):
     try:
@@ -19,13 +19,13 @@ def check_env_variables(variable_name):
         logging.exception(error_message)
         raise Exception(error_message)
 
-check_env_variables(env_variable_key)
-check_env_variables(env_variable_secret)
+check_env_variables(woo_key)
+check_env_variables(woo_secret)
 
 wcapi = API(
-    url="http://localhost:8888/mysite2",
-    consumer_key=os.getenv(env_variable_key),
-    consumer_secret=os.getenv(env_variable_secret),
+    url="http://dev.bootcamp.store.supersqa.com",
+    consumer_key=os.getenv(woo_key),
+    consumer_secret=os.getenv(woo_secret),
     version="wc/v3",
     timeout=60
 )
