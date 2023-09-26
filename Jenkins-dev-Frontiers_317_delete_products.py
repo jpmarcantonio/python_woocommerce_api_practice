@@ -46,6 +46,9 @@ wcapi = API(
     timeout=60
 )
 
+total_products = []
+products_to_delete = []
+
 # get all products from db
 page = 1
 while True:
@@ -55,12 +58,19 @@ while True:
     if not products:  # no more products
         break
 
-    # add products into lists. total products, and products with no images to be deleted
-    total_products = [product['id'] for product in products]
-    products_to_delete = [product['id'] for product in products if not product['images']]
+    # append all products into lists. Total products and products with no images to be deleted
+    for product in products:
+        product_id = product['id']
+        image = product['images']
 
-# take user input and delete products
+        total_products.append(product_id)
+
+        if not image:
+            products_to_delete.append(product_id)
+
+# check user input and delete products
 def delete_confirm():
+    breakpoint()
     if confirm_delete == "yes":
         logging.info(f'Deleting products from database...')
         for i in products_to_delete:
