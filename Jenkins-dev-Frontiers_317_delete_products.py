@@ -86,7 +86,7 @@ def define_and_parse_command_line_args():
     # defining argument parser
     parser = argparse.ArgumentParser(description="Delete products that contain no images from the database")
     parser.add_argument("--confirm-delete", choices=["yes", "no"], default="no",  type=str.lower,
-                        help=f"Confirm deletion (yes/no). \n"
+                        help=f"Confirm deletion (yes/no). "
                              f"There are {len(products_to_delete)} products to be deleted. "
                              f"By selecting '--confirm-delete no' you will not deleted any products. "
                              f"By selecting '--confirm-delete yes' you will delete {len(products_to_delete)} products.")
