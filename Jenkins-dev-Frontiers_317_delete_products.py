@@ -5,7 +5,7 @@ Example command to run script: python Jenkins-dev-Frontiers_317_delete_products.
 To run this script you must set these environment variables in your system environment:
 woo_key = <your Woocommerce consumer key as 'WOO_KEY'>,
 woo_secret = <your Woocommerce consumer secret as 'WOO_SECRET',
-url = <the url for the site on which you will run this script as 'url'>.
+url = <the url for the site on which you will run this script as 'URL'>.
 
 URL for dev site: http://dev.bootcamp.store.supersqa.com/
 
@@ -15,16 +15,6 @@ import argparse
 import logging
 import os
 from woocommerce import API
-
-# defining argument parser
-parser = argparse.ArgumentParser(description="Delete products with no images from the database")
-parser.add_argument("--confirm-delete", choices=["yes", "no"], default="no", help="Confirm deletion (yes/no)")
-
-# parse command-line arguments
-args =parser.parse_args()
-confirm_delete = args.confirm_delete.lower()
-
-logging.basicConfig(level=logging.INFO)
 
 # dev environment variables
 woo_key = 'WOO_KEY'
@@ -91,6 +81,23 @@ while True:
         if not image:
             products_to_delete.append(product_id)
 
+
+def define_and_parse_command_line_args():
+    # defining argument parser
+    parser = argparse.ArgumentParser(description="Delete products that contain no images from the database")
+    parser.add_argument("--confirm-delete", choices=["yes", "no"], default="no",  type=str.lower,
+                        help=f"Confirm deletion (yes/no). \n"
+                             f"There are {len(products_to_delete)} products to be deleted. "
+                             f"By selecting '--confirm-delete no' you will not deleted any products. "
+                             f"By selecting '--confirm-delete yes' you will delete {len(products_to_delete)} products.")
+
+    # parse command-line arguments
+    args = parser.parse_args()
+    global confirm_delete
+    confirm_delete = args.confirm_delete.lower()
+
+    logging.basicConfig(level=logging.INFO)
+
 # check user input and delete products
 def delete_confirm():
     if confirm_delete == "yes":
@@ -98,7 +105,9 @@ def delete_confirm():
         for i in products_to_delete:
             wcapi.delete(f"products/{i}", params={"force": True})
     else:
-        logging.info(f"No products have been deleted.")
+        logging.info(f"No products have been deleted. There are {len(products_to_delete)} products containing no image that"
+                     f"are eligible for deletion.")
 
+define_and_parse_command_line_args()
 delete_confirm()
 logging.info(f"{len(products_to_delete)} Products deleted. {len(total_products) - len(products_to_delete)} Products remaining in your store.")
