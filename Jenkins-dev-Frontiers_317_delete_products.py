@@ -70,7 +70,6 @@ while True:
 
 # check user input and delete products
 def delete_confirm():
-    breakpoint()
     if confirm_delete == "yes":
         logging.info(f'Deleting products from database...')
         for i in products_to_delete:
