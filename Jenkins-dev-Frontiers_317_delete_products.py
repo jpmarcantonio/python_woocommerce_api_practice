@@ -18,24 +18,33 @@ confirm_delete = args.confirm_delete.lower()
 
 logging.basicConfig(level=logging.INFO)
 
-# dev variables
+# # dev variables
 woo_key = 'WOO_KEY'
 woo_secret = 'WOO_SECRET'
+description_woo_key = 'Woocommerce Consumer Key'
+description_woo_secret = 'Woocommerce Consumer Secret'
 
 # local variables
 # woo_key = 'MYSITE2_API_KEY'
 # woo_secret = 'MYSITE2_API_SECRET'
 
-def check_env_variables(variable_name):
+def check_env_variables(variable_name, variable_desc):
     try:
         os.environ[variable_name]
     except KeyError as e:
-        error_message = f"The environment variable must be set: {e}"
+        error_message = f"The environment variable must be set: {e}. You must set your {variable_desc} in your environment. \n" \
+                        f"Here is information on how to generate an API key for your woocommerce site: " \
+                        f"https://woocommerce.com/document/woocommerce-rest-api/#section-2 \n" \
+                        f"Please see provided information on how to set environment variables for your specific environment. \n" \
+                        f"Windows: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/set_1 \n" \
+                        f"Ubuntu Linux: https://askubuntu.com/questions/730/how-do-i-set-environment-variables \n" \
+                        f"Mac: https://support.apple.com/guide/terminal/use-environment-variables-apd382cc5fa-4f58-4449-b20a-41c53c006f8f/mac"
+
         logging.exception(error_message)
         raise Exception(error_message)
 
-check_env_variables(woo_key)
-check_env_variables(woo_secret)
+check_env_variables(woo_key, description_woo_key)
+check_env_variables(woo_secret, description_woo_secret)
 
 wcapi = API(
     url="http://dev.bootcamp.store.supersqa.com/",
