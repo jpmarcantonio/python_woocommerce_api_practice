@@ -1,6 +1,14 @@
 """
 Working on a script to clean up demo store. delete all products without images.
 Example command to run script: python Jenkins-dev-Frontiers_317_delete_products.py --confirm-delete yes
+
+To run this script you must set these environment variables in your system environment:
+woo_key = <your Woocommerce consumer key as 'WOO_KEY'>,
+woo_secret = <your Woocommerce consumer secret as 'WOO_SECRET',
+url = <the url for the site on which you will run this script as 'url'>.
+
+URL for dev site: http://dev.bootcamp.store.supersqa.com/
+
 """
 
 import argparse
@@ -18,21 +26,27 @@ confirm_delete = args.confirm_delete.lower()
 
 logging.basicConfig(level=logging.INFO)
 
-# # dev variables
+# dev environment variables
 woo_key = 'WOO_KEY'
 woo_secret = 'WOO_SECRET'
-description_woo_key = 'Woocommerce Consumer Key'
-description_woo_secret = 'Woocommerce Consumer Secret'
+url = url
 
-# local variables
+# local environment variables
 # woo_key = 'MYSITE2_API_KEY'
 # woo_secret = 'MYSITE2_API_SECRET'
+# url = 'url'
+
+# environment variable descriptions for logging purposes
+description_woo_key = 'Woocommerce Consumer Key'
+description_woo_secret = 'Woocommerce Consumer Secret'
+description_url = 'URL to the site on which you will perform this operation'
+
 
 def check_env_variables(variable_name, variable_desc):
     try:
         os.environ[variable_name]
     except KeyError as e:
-        error_message = f"The environment variable must be set: {e}. You must set your {variable_desc} in your environment. \n" \
+        error_message = f"The environment variable must be set: {e}. You must set your {variable_desc} in your system environment. \n" \
                         f"Here is information on how to generate an API key for your woocommerce site: " \
                         f"https://woocommerce.com/document/woocommerce-rest-api/#section-2 \n" \
                         f"Please see provided information on how to set environment variables for your specific environment. \n" \
@@ -45,10 +59,10 @@ def check_env_variables(variable_name, variable_desc):
 
 check_env_variables(woo_key, description_woo_key)
 check_env_variables(woo_secret, description_woo_secret)
+check_env_variables(url, description_url)
 
 wcapi = API(
-    url="http://dev.bootcamp.store.supersqa.com/",
-    # url="http://localhost:8888/mysite2",
+    url=os.getenv(url),
     consumer_key=os.getenv(woo_key),
     consumer_secret=os.getenv(woo_secret),
     version="wc/v3",
