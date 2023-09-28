@@ -29,12 +29,12 @@ logging.basicConfig(level=logging.INFO)
 # dev environment variables
 woo_key = 'WOO_KEY'
 woo_secret = 'WOO_SECRET'
-url = url
+url = 'URL'
 
 # local environment variables
 # woo_key = 'MYSITE2_API_KEY'
 # woo_secret = 'MYSITE2_API_SECRET'
-# url = 'url'
+# url = 'URL'
 
 # environment variable descriptions for logging purposes
 description_woo_key = 'Woocommerce Consumer Key'
