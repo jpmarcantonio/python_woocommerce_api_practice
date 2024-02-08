@@ -1,9 +1,26 @@
 """
-Working on a script to update the stock quantity of all items in the store. The script will update the quantity
-of each item to a random number between 0 - 50
+This script utilizes the WooCommerce API to update the stock quantity of all products in the store.
+It sets 'manage_stock' to True and assigns a random stock quantity between 0 and 50 to each product.
 
-"manage_stock" must be True in order to update stock quantity
+Requirements:
+- WooCommerce API credentials (consumer_key, consumer_secret) and store URL must be set as environment variables.
+  - Set 'WOO_KEY', 'WOO_SECRET', and 'URL' environment variables with the appropriate values.
+
+Usage:
+1. Ensure the required environment variables are set.
+2. Execute the script to update the stock quantity for all products.
+
+Script Flow:
+1. Checks and retrieves WooCommerce API credentials and store URL from environment variables.
+2. Creates a WooCommerce API instance using the provided credentials.
+3. Retrieves all products from the store in batches of 100 products per page.
+4. For each product, checks if the product type is valid for stock management. Only 'simple' and 'variable' product
+   types are valid.
+5. If valid, sets 'manage_stock' to True and updates the stock quantity with a random value.
+6. Logs the details of the updated products.
+7. Prints the total number of products whose stock quantity has been updated and the list of invalid product IDs.
 """
+
 from woocommerce import API
 import random
 import os
@@ -13,29 +30,17 @@ variable_key = "WOO_KEY"
 variable_secret = "WOO_SECRET"
 url = "URL"
 
-def check_environment_variables():
+def check_environment_variables(var):
     try:
-        os.environ[variable_key]
+        os.environ[var]
     except Exception as e:
         logging.exception(f"The environment variable name must be set: {e}")
         print(f"Error has occurred: {e}")
         raise Exception(f"The environment variable name {e} must be set")
 
-    try:
-        os.environ[variable_secret]
-    except Exception as e:
-        logging.exception(f"The environment variable name must be set: {e}")
-        print(f"Error has occurred: {e}")
-        raise Exception(f"The environment variable name {e} must be set")
-
-    try:
-        os.environ[url]
-    except Exception as e:
-        logging.exception(f"The environment variable name must be set: {e}")
-        print(f"Error has occurred: {e}")
-        raise Exception(f"The environment variable name {e} must be set")
-
-check_environment_variables()
+check_environment_variables(variable_key)
+check_environment_variables(variable_secret)
+check_environment_variables(url)
 
 wcapi = API(
     url=os.getenv(url),
